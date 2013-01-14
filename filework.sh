@@ -3,6 +3,7 @@
 
 cd ./build
 bash build.sh
+cd ..
 WORDCOUNT=`bash thecount.sh`
 git add -A . 
 echo "$1 $WORDCOUNT"

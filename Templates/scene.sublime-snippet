@@ -1,0 +1,46 @@
+<!-- 
+
+This is a text expansion snippet for Sublime Text 2 (which I use and love.) You don't need to use the snippet, but the form is good. Especially for index cards. 
+
+---
+
+Setting:
+
+Action:
+
++/-: 
+
+|><|:
+
+---
+
+The form is one for index cards taken from Blake Synder's "Save the Cat." Blake wrote about film, but I find these four things as a really useful checklist for why a particular scene might not be working. 
+
+Setting: Where have you put this scene, and is it the best place for it. 
+
+Action: What is going on in the scene.
+
++/-: By the time the scene is over, has someone gone from good to bad or bad to good. Or Bad to Worse. Or worse to absolutely horrible. If there isn't an emotional change like this in the scene, it's probably pointless. 
+
+|><|: What's the conflict. If there is no conflict, or it's a weak conflict, the scene probably pointless. 
+
+ -->
+
+ <snippet>
+ 	<content><![CDATA[
+ 		---
+
+ 		Setting: $1
+
+ 		Action: $2
+
+ 		+/- : $3
+
+ 		|><| : $0
+
+ 		---
+ 		]]>
+ 	</content>
+ 		<tabTrigger>sc</tabTrigger>
+ </snippet>
+

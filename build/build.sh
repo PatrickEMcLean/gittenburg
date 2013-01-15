@@ -18,7 +18,7 @@ cat `find *md` >> ./output/fullbook.md
 
 BOOKNAME="YOURGITTENBURGEBOOK"
 
-
+cd ./build
 pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./output/$BOOKNAME.epub `find *md`
 
 pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./output/$BOOKNAME.docx `find *md`

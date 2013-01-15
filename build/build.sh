@@ -6,7 +6,6 @@
 # 
 
 
-
 if [ -f ../output/fullbook.md ];
 then
    rm ../output/fullbook.md

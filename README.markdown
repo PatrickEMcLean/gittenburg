@@ -16,7 +16,7 @@ My goals are:
 
 I use this on OSX. No clue what you'd have to do, if anything to use this anywhere else. 
 
-filework.sh automatically builds book.md (a preview file for use with Marked) counts the words and pushes changes to a github repo. 
+filework.sh automatically builds book.md (a preview file for use with Marked) counts the words and pushes changes to a github repo. If you add a commit message, it will post the commit message as well. 
 
 filework.sh calls build.sh in /build to actually build the book. If you poke around in build/old you'll see the [pandoc](http://johnmacfarlane.net/pandoc/) commands to generate various formats of ebooks using pandoc. 
 

@@ -1,6 +1,5 @@
 #!/bin/bash 
 
-
 cd ./build
 bash build.sh
 cd ..

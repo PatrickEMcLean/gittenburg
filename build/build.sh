@@ -1,4 +1,9 @@
-# Build a new index for a marked file
+# Gittenburg Build 
+#
+# Grinds out ebook files by finding all .md files in the main directory.
+# 
+# 
+# 
 
 
 
@@ -20,14 +25,13 @@ done
 
 cat `find *md` >> ./build/fullbook.md
 
-## To Build additional kinds of ebooks, uncomment these lines
+## To Build additional kinds of ebooks, uncomment these lines and name your book.
 
-BOOKNAME="YOURGITTENBURGEBOOK"
+# BOOKNAME="YOURGITTENBURGEBOOK"
 
 
+# pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./build/metadata.xml -o ./build/$BOOKNAME.epub `find *md`
 
-pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./build/metadata.xml -o ./build/$BOOKNAME.epub `find *md`
+# pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./build/metadata.xml -o ./build/$BOOKNAME.docx `find *md`
 
-pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./build/metadata.xml -o ./build/$BOOKNAME.docx `find *md`
-
-pandoc -o ./build/$BOOKNAME.html `find *md`
+# pandoc -o ./build/$BOOKNAME.html `find *md`

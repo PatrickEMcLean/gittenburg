@@ -2,14 +2,14 @@ gittenburg
 ==========
 
 A writing/publishing system built around bash, markdown,
-sublimeedit2 and Marked.  
+[Sublime Text 2](http://www.sublimetext.com/) , [Marked](http://markedapp.com/) and (optionally) [Pandoc](http://johnmacfarlane.net/pandoc/).  
 
 My goals are:
 
 * to work in plain text. 
 * Have a perfect backup, record of changes and daily word count
 * learn how to use git and shell scripting. 
-* have the git commit history work as a [Seinfeldian Chain](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret). Somewhat stupid, but it works.  
+* have the git commit history work as a [Seinfeldian Chain](http://lifehacker.com/281626/jerry-seinfelds-productivity-secret). Somewhat stupid, but it works for me.  
 * go directly from one canonical set of .md files to a publishable ebook
 
 ## How it Works. 
@@ -18,14 +18,16 @@ I use this on OSX. No clue what you'd have to do, if anything to use this anywhe
 
 filework.sh automatically builds book.md (a preview file for use with Marked) counts the words and pushes changes to a github repo. If you add a commit message, it will post the commit message as well. Be sure to put quotes around the commit message 
 
-filework.sh calls build.sh in /build to actually build the book. If you poke around in build/old you'll see the [pandoc](http://johnmacfarlane.net/pandoc/) commands to generate various formats of ebooks using pandoc. 
+filework.sh calls build.sh in /build to actually build the book. If you uncomment lines in this script you can build other ebook formats. I currently have .docx .html and .epub in there. You can make many more using Pandoc
 
 Files are inserted into the book alphabetically by name, so 09Chapter9.md will come before Chapter01.md. I number chapters and leave everything else as a name so that my notes and such go at the end. Simple. And simple is good.  
 
 
-### Sublime_build system
+### sublime-build
 
-If you want to use the sublime text 2 and  build system you'll need to use git-credential store. 
+Copy the gittenburg.sublime-build into your ~/Library/Application Support/Sublime Text 2/Packages/User.
+
+Then, from the command line, use this git-credential store, for your repo. 
 
 > $ git config credential.helper store
 > $ git push http://example.com/repo.git

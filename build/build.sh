@@ -6,21 +6,21 @@
 # 
 
 
-if [ -f ./output/fullbook.md ];
+if [ -f ../output/fullbook.md ];
 then
    rm fullbook.md
 fi
 
-
-cat `find *md` >> output/fullbook.md
+cd ..
+cat `find *md` >> ./output/fullbook.md
 
 # To Build additional kinds of ebooks, uncomment these lines and name your book.
 
 BOOKNAME="YOURGITTENBURGEBOOK"
 
 
-pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.epub `find *md`
+pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./output/$BOOKNAME.epub `find *md`
 
-pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.docx `find *md`
+pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./output/$BOOKNAME.docx `find *md`
 
 pandoc -o ./output/$BOOKNAME.html `find *md`

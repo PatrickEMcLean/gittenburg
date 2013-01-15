@@ -1,4 +1,4 @@
-<<[01-Chapter1.md]
-<<[02-Chapter2.md]
-<<[03-Chapter3.md]
+<<[01-SampleChapter1.md]
+<<[02-SampleChapter2.md]
+<<[03-SampleChapter3.md]
 <<[AA-ChapterLast.md]

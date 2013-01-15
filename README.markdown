@@ -2,7 +2,7 @@ gittenburg
 ==========
 
 A writing/publishing system built around bash, markdown,
-sublimeedit2 and Marked. 
+sublimeedit2 and Marked.  
 
 My goals are:
 
@@ -22,9 +22,20 @@ filework.sh calls build.sh in /build to actually build the book. If you poke aro
 
 Files are inserted into the book alphabetically by name, so 09Chapter9.md will come before Chapter01.md. I number chapters and leave everything else as a name so that my notes and such go at the end. Simple. And simple is good.  
 
+
+
 ### Sublime_build system
 
 If you want to use the sublime text 2 and  build system you'll need to use git-credential store. 
+
+> $ git config credential.helper store
+> $ git push http://example.com/repo.git
+> Username: <type your username>
+> Password: <type your password>
+
+> [several days later]
+> $ git push http://example.com/repo.git
+> [your credentials are used automatically]
 
 http://kernel.org/pub/software/scm/git/docs/git-credential-store.html
 

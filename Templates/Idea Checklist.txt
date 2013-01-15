@@ -1,14 +1,10 @@
 # Idea Checklist
 
-Titles: good words (right order)
-
-H
+Titles: 
 
 Competition:
 
-http://www.amazon.com/gp/bestsellers/books/660626/ref=sr_bs_1
-
-Make a list of similar books author, title, subtitle, publisher, year of publication. 
+*Make a list of similar books author, title, subtitle, publisher, year of publication.**
 
 Audience:
 
@@ -23,4 +19,4 @@ Potential costs:
 
 The "Why Me" factor:
 
-Salability:
+Saleability:

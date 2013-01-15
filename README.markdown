@@ -29,14 +29,13 @@ Copy the gittenburg.sublime-build into your ~/Library/Application Support/Sublim
 
 Then, from the command line, use this git-credential store, for your repo. 
 
-> $ git config credential.helper store
-> $ git push http://example.com/repo.git
-> Username: <type your username>
-> Password: <type your password>
-
-> [several days later]
-> $ git push http://example.com/repo.git
-> [your credentials are used automatically]
+    $ git config credential.helper store
+    $ git push http://example.com/repo.git
+    Username: <type your username>
+    Password: <type your password>
+    [several days later]
+    $ git push http://example.com/repo.git
+    [your credentials are used automatically]
 
 http://kernel.org/pub/software/scm/git/docs/git-credential-store.html
 

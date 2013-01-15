@@ -4,4 +4,3 @@
 <<[03-Chapter3.md]
 <<[11-Chapter3.md]
 <<[AA-Chapter1.md]
-<<[README.md]

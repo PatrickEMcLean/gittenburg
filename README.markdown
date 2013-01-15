@@ -22,6 +22,12 @@ filework.sh calls build.sh in /build to actually build the book. If you poke aro
 
 Files are inserted into the book alphabetically by name, so 09Chapter9.md will come before Chapter01.md. I number chapters and leave everything else as a name so that my notes and such go at the end. Simple. And simple is good.  
 
+### Sublime_build system
+
+If you want to use the sublime text 2 and  build system you'll need to use git-credential store. 
+
+http://kernel.org/pub/software/scm/git/docs/git-credential-store.html
+
 ## Where it fails. 
 
 ### Issues with .mobi and Kindle conversions

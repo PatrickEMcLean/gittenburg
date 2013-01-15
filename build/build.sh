@@ -11,7 +11,8 @@ then
    rm ../output/fullbook.md
 fi
 
-cd ..
+# cd ..
+
 cat `find *md` >> ./output/fullbook.md
 
 # To Build additional kinds of ebooks, uncomment these lines and name your book.

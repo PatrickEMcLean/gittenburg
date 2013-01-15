@@ -7,11 +7,6 @@
 
 
 
-if [ -f book.md ];
-then
-   rm book.md
-fi
-
 if [ -f fullbook.md ];
 then
    rm fullbook.md

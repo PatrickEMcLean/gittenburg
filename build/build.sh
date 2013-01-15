@@ -17,11 +17,6 @@ then
    rm fullbook.md
 fi
 
-cd ..
-for f in `find *md`; 
-do
-echo "<<[$f]" >> ./build/book.md
-done
 
 cat `find *md` >> ./build/fullbook.md
 

@@ -8,7 +8,7 @@
 
 if [ -f ../output/fullbook.md ];
 then
-   rm fullbook.md
+   rm ../output/fullbook.md
 fi
 
 cd ..

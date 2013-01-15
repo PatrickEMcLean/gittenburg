@@ -12,7 +12,7 @@ then
 fi
 
 
-cat `find *md` >> ./output/fullbook.md
+cat `find *md` >> output/fullbook.md
 
 # To Build additional kinds of ebooks, uncomment these lines and name your book.
 

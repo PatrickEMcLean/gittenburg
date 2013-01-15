@@ -14,13 +14,13 @@ fi
 
 cat `find *md` >> ./output/fullbook.md
 
-## To Build additional kinds of ebooks, uncomment these lines and name your book.
+# To Build additional kinds of ebooks, uncomment these lines and name your book.
 
-# BOOKNAME="YOURGITTENBURGEBOOK"
+BOOKNAME="YOURGITTENBURGEBOOK"
 
 
-# pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.epub `find *md`
+pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.epub `find *md`
 
-# pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.docx `find *md`
+pandoc -S --toc --epub-stylesheet=./build/style.css --epub-metadata=./output/metadata.xml -o ./build/$BOOKNAME.docx `find *md`
 
-# pandoc -o ./output/$BOOKNAME.html `find *md`
+pandoc -o ./output/$BOOKNAME.html `find *md`

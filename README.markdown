@@ -46,6 +46,15 @@ Then, from the command line, use this git-credential store, for your repo.
 
 http://kernel.org/pub/software/scm/git/docs/git-credential-store.html
 
+## Setup
+
+Make a new repository on github
+git clone https://github.com/PatrickEMcLean/gittenburg FOLDERNAME
+git remote add origin http://path/to/repository
+bash filework.sh "optional commit message
+
+And you are off. 
+
 ## Where it fails. 
 
 ### Issues with .mobi and Kindle conversions
